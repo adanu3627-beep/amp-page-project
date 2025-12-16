@@ -1,0 +1,152 @@
+<!doctype html>
+<html ⚡ lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Elanggame</title>
+
+  <!-- GANTI dengan web utama kamu -->
+  <link rel="canonical" href="https://kissimmeemainstreet.com/">
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<style amp-custom>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+
+    /* background gambar */
+    background: url('https://res.cloudinary.com/dbvnuze6c/image/upload/v1765874550/latar_hitam2_ldykkl.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* lapisan kilatan menyapu */
+  body::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -150%;
+    width: 300%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      transparent 40%,
+      rgba(199, 181, 181, 0.9) 50%,
+      transparent 60%
+    );
+    opacity: 0;
+    animation: lightning-sweep 3s infinite;
+    pointer-events: none;
+  }
+
+  @keyframes lightning-sweep {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    15% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+
+  .card {
+    background: rgba(19, 16, 16, 0.6);
+    margin: 60px auto;
+    padding: 25px;
+    width: 50%;
+    max-width: 420px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(224, 220, 220, 0.35);
+  }
+
+  .btn {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    width: 50%;
+    background: linear-gradient(135deg, #ffffff, #f2f2f2);
+    color: #5a3a1e;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+ 
+
+  /* === TAMBAHKAN DI SINI (CSS BARU) === */
+  .center-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: floatBox 3s ease-in-out infinite;
+  }
+
+  @keyframes floatBox {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+  }
+
+  .mini-card {
+    background: rgba(27, 16, 16, 0.55);
+    padding: 14px;
+    width: 250px;
+    border-radius: 14px;
+  }
+
+  .mini-card .btn {
+    padding: 9px;
+    font-size: 13px;
+  }
+</style>
+
+</style>
+
+</head>
+<body>
+
+  <h1>Selamat Datang</h1>
+  <div class="card">
+
+  <amp-img
+    src="https://res.cloudinary.com/dbvnuze6c/image/upload/v1765874578/banner2_cfn7p4.webp"
+    width="300"
+    height="200"
+    layout="responsive"
+    alt="Gambar">
+  </amp-img>
+
+<div class="center-box">
+  <div class="mini-card">
+    <h3>Masuk</h3>
+
+    <a href="https://kissimmeemainstreet.com/" class="btn">Login</a>
+    <a href="https://kissimmeemainstreet.com/" class="btn">Daftar</a>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
